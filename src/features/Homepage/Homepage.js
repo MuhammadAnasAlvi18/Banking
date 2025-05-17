@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Homepage() {
   const [activeTab, setActiveTab] = useState(0);
@@ -174,9 +175,11 @@ export default function Homepage() {
             </div>
           </div>
           <div className="hero-image">
-            <img
+            <Image
               src="/images/banner.jpg"
               alt="Mobile banking app on smartphone"
+              width={500}
+              height={300}
             />
           </div>
         </div>
@@ -232,7 +235,7 @@ export default function Homepage() {
               <h3>No Hidden Fees</h3>
               <p>
                 Transparent pricing with no hidden fees. Know exactly what
-                you're paying for our services.
+                you&apos;re paying for our services.
               </p>
             </div>
             <div className="feature-card">
@@ -301,9 +304,11 @@ export default function Homepage() {
               </a>
             </div>
             <div className="service-image">
-              <img
+              <Image
                 src={tabContents[activeTab].image}
                 alt={tabContents[activeTab].imageAlt}
+                width={500}
+                height={300}
               />
             </div>
           </div>
@@ -315,7 +320,7 @@ export default function Homepage() {
           <div className="section-header">
             <h2>What Our Customers Say</h2>
             <p>
-              Don't just take our word for it. Here's what our customers have to
+              Don&apos;t just take our word for it. Here&apos;s what our customers have to
               say about their SecureBank experience.
             </p>
           </div>
@@ -341,7 +346,7 @@ export default function Homepage() {
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <p>
-                  I've been with SecureBank for over 5 years now. Their mortgage
+                  I&apos;ve been with SecureBank for over 5 years now. Their mortgage
                   process was smooth and their rates are competitive. Highly
                   recommend!
                 </p>
@@ -357,8 +362,8 @@ export default function Homepage() {
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <p>
-                  As a student, I appreciate SecureBank's no-fee student
-                  accounts and educational resources on financial literacy. It's
+                  As a student, I appreciate SecureBank&apos;s no-fee student
+                  accounts and educational resources on financial literacy. It&apos;s
                   helped me build good habits early.
                 </p>
               </div>
